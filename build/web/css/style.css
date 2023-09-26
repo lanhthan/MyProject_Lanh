@@ -1,0 +1,326 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jun 19, 2023, 10:40:23 PM
+    Author     : windy
+*/
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,500&display=swap');*/
+* {
+    /*font-family: 'Poppins', sans-serif;*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    height: 30px;
+    background-color: #333333;
+    top: 0;
+    left: 0;
+    right: 0;
+
+}
+
+
+
+#nav{
+    display: inline-block;
+    float: right;
+}
+#nav li{
+    display: inline-block;
+    line-height: 30px;
+    position: relative;
+}
+
+#nav > li > a {
+    color: white;
+    text-decoration: none;
+    padding: 0px 24px;
+    display: inline-block;
+}
+
+.menu{
+    background-color: white;
+/*    display: flex;
+    justify-content: space-between;*/
+}
+
+.menu img{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+    margin-right: auto;
+    
+}
+#menu2{
+    display: inline-block;
+    margin-left: 10px;
+    
+}
+#menu2 li{
+    display: inline-block;
+    line-height: 46px;
+    position: relative;
+    margin-left: 5px;
+}
+#menu2 > li > a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #fff;
+    font-size: 23px;
+    font-family: GeometricExtraBold;
+    margin-right: 10px;
+    font-weight: 900;
+    text-transform: uppercase;
+
+}
+/*#menu2 > li:hover > a{
+    color: white;
+    background-color: #333333;
+}*/
+
+#menu2 .submenu{
+    display: none;
+    position: absolute;
+}
+#menu2 li:hover .submenu{
+    display: block;
+}
+#menu2 .submenu li{
+    width: 160px;
+    background-color: white;
+}
+
+#menu2 .submenu li a{
+    text-decoration: none;
+    color: black;
+    padding: 8px 16px;
+}
+#menu2 .submenu li:hover{
+    
+    background-color: #e4e1dc;
+}
+.line{
+    border-right: #e3e2e2 2px solid;
+    margin-top: 38px;
+    height: 23px;
+}
+
+.search-icon{
+    position: absolute;
+    margin-left: 430px;
+    margin-top: 50px;
+    z-index: 1;
+    padding-left: 5px;
+}
+.menu input{
+    line-height: 23px;
+    position: relative;
+    margin-left: 430px;
+    padding-left: 23px;
+}
+form{
+    float: right;
+    margin-top: 44px;
+    margin-right: 12px;
+}
+.banner{
+    margin-top: 20px;
+    background-color: #e4e1dc;
+    height: 550px;
+}
+.banner .advers-content{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-style: italic;
+    padding-top: 10px;
+    text-align: center;
+    color: black;
+    margin-bottom: 10px;
+}
+.banner-img{
+    width: 100%;
+    height: 500px;
+}
+
+.list-category{
+    margin-top: 30px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e4e1dc;
+}
+
+.list-category li{
+    list-style: none;
+}
+.cate-img{
+    width: 120px;
+    height: 120px;
+    border-radius: 90px;
+}
+.cate-item li{
+    width: 23%;
+    text-align: center;
+    float: left;
+    margin-top: 25px;
+    margin-left: 16px;
+    /*padding: 10px 0px;*/
+    height: 180px;
+    padding-top: 20px;
+/*    border: 1px grey solid;*/
+/*    background-color: #e4e1dc;*/
+}
+.cate-item li:hover{
+    background-color: #e4e1dc;
+}
+.cate-item p{
+    text-transform: uppercase;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+/*.cate-item div{
+    background-image: url('../images/intro1.jpg');
+}*/
+.cate-item a{
+    text-decoration: none;
+}
+.list-category h1 {
+    /*color: #9f6f10;*/
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 10px;
+}
+.list-category i{
+    width: 100%;
+    display: block;
+    height: 3px;
+    background-color: orange;
+}
+.banner-img2{
+    width: 100%;
+    height: 750px;
+    margin-top: 30px;
+}
+.introduce{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    /*    background-image: url("../images/intro1.jpg");
+        height: 500px;
+        opacity: 0.1;*/
+}
+.introduce h1{
+    text-transform: uppercase;
+    opacity: 5;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.desc{
+    display: flex;
+    justify-content: space-between;
+/*    background-color: #e4e1dc;*/
+    background-color: #333333;
+    padding: 20px 40px 20px 40px;
+    
+
+}
+.desc img{
+    width: 40%;
+    height: 250px;
+}
+.intro-desc {
+    font-size: 23px;
+    width: 58%;
+    font-style: italic;
+    font-weight: 500;
+    color: white;
+    text-indent: 50px;
+    text-align: justify;
+  text-justify: inter-word;
+}
+/*.intro-img1{
+    width: 100%;
+    height: 500px;
+    opacity: 0.5;
+    position: relative;
+}*/
+.introduce h3{
+    margin-top: 10px;
+    color: green;
+    text-align: center;
+}
+.footer{
+    margin-top: 50px;
+    background-color: #4c4c4c;
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+.butt-store{
+    background-color: #ff6600;
+    border-radius: 5px;
+    width: 250px;
+    height: 50px;
+    color: white;
+    font-weight: 700;
+    margin-left: 20px;
+    margin-top: 225px;
+    font-size: 23px;
+}
+/*.footer img{
+    position: absolute;
+}*/
+
+.footer-content{
+    margin-top: 50px;
+    padding-left: 100px;
+    float: right;
+    width: 75%;
+}
+.footer-title{
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.content-items{
+    color: #cccccc;
+    width: 30%;
+    float: left;
+    margin-top: 30px;
+    padding-left: 30px;
+}
+.content-items ul li{
+    list-style: none;
+    font-size: 20px;
+    line-height: 30px;
+}
+.social-contact {
+    width: 100%;
+    margin-left: 39%;
+    
+}
+.social-contact img{
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+}
+.footer p{
+    margin-top: 20px;
+    color: #cccccc;
+    text-align: center;
+}
+
+
+
+
